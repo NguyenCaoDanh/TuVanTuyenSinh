@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />     
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Cổng thông tin tư vấn tuyển sinh"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name ="title" value="Đăng ký"/>
+        <put-attribute name ="content"
+                       value="/WEB-INF/pages/register.jsp"/>
+    </definition>
+    <definition name="posts" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý bài viết" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/posts.jsp" />
+    </definition>
+    <definition name="banners" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý hình ảnh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/banners.jsp" />
+    </definition> 
+    <definition name="settings" extends="baseLayout">
+        <put-attribute name="title" value="Cài đặt chức năng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/settings.jsp" />
+    </definition> 
+    <definition name="school" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin trường" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/school.jsp" />
+    </definition> 
+    <definition name="schoolsetting" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin trường" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/schoolsetting.jsp" />
+    </definition>
+    <definition name="benmarks" extends="baseLayout">
+        <put-attribute name="title" value="Điểm chuẩn" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/benmarks.jsp" />
+    </definition>
+    <definition name="benmarksetting" extends="baseLayout">
+        <put-attribute name="title" value="Điểm chuẩn" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/benmarksetting.jsp" />
+    </definition>
+    <definition name="banners" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý banners" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/banners.jsp" />
+    </definition>
+    <definition name="bannersetting" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý banners" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/bannersetting.jsp" />
+    </definition>
+    <definition name="postdetail" extends="baseLayout">
+        <put-attribute name="title" value="Nội dung bài viết" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/postdetail.jsp" />
+    </definition>
+    <definition name="postlist" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách bài viết" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/postlist.jsp" />
+    </definition>
+    <definition name="faculties" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý Khoa" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/faculties.jsp" />
+    </definition>
+    <definition name="facultysetting" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý Khoa" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/facultysetting.jsp" />
+    </definition>
+    <definition name="facultiesdetail" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý Khoa" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/facultiesdetail.jsp" />
+    </definition>
+    <definition name="questionlist" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý question" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/questionlist.jsp" />
+    </definition>
+    <definition name="lienhe" extends="baseLayout">
+        <put-attribute name="title" value="Liên hệ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/lienhe.jsp" />
+    </definition>
+    <definition name="majors" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý chuyên ngành" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/majors.jsp" />
+    </definition>
+    <definition name="majorsetting" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý chuyên ngành" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/majorsetting.jsp" />
+    </definition>
+    <definition name="livestreamdetail" extends="baseLayout">
+        <put-attribute name="title" value="Thông báo livestream" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/livestreamdetail.jsp" />
+    </definition>
+    <definition name="livestreamlist" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý livestream" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/livestreamlist.jsp" />
+    </definition>
+    <definition name="livestreams" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý livestream" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/livestreams.jsp" />
+    </definition>
+    <definition name="livestreamsetting" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý livestream" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/livestreamsetting.jsp" />
+    </definition>
+    <definition name="userssettings" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý người dùng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/userssettings.jsp" />
+    </definition>
+    <definition name="user1" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý người dùng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/user1.jsp" />
+    </definition>
+    <definition name="accoutsetting" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin cá nhân" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/accoutsetting.jsp" />
+    </definition>
+     <definition name="gpt" extends="baseLayout">
+        <put-attribute name="title" value="ChatGPT bot AI" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/gpt.jsp" />
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.tqh_TuVanTuyenSinh_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.tqh.pojo.Users</class>
+    <class>com.tqh.pojo.Faculty</class>
+    <class>com.tqh.pojo.Benmarks</class>
+    <class>com.tqh.pojo.Post</class>
+    <class>com.tqh.pojo.Comment</class>
+    <class>com.tqh.pojo.Admission</class>
+    <class>com.tqh.pojo.Permission</class>
+    <class>com.tqh.pojo.School</class>
+    <class>com.tqh.pojo.Banner</class>
+    <class>com.tqh.pojo.Userrole</class>
+    <class>com.tqh.pojo.School_1</class>
+    <class>com.tqh.pojo.RoleUser</class>
+    <class>com.tqh.pojo.Reply</class>
+    <class>com.tqh.pojo.Livestreams</class>
+    <class>com.tqh.pojo.Majors</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tuyensinh?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Admin@123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
